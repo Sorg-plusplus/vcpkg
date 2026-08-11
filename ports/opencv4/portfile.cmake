@@ -33,6 +33,7 @@ vcpkg_from_github(
       0012-miss-openexr.patch
       0015-fix-freetype.patch
       0017-fix-flatbuffers.patch
+      0019-contrib-cout.diff
       0020-fix-narrow-filesystem.diff
       0021-fix-qt-gen-def.patch
       0022-android-use-vcpkg-cpu-features.patch
