@@ -2,7 +2,7 @@ vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO awslabs/aws-crt-cpp
     REF "v${VERSION}"
-    SHA512 071b80d340ffe445ed62cbb1edae88f2c84b57f2ab16148a70560cebb2227954470f976fb1fdd5314d3628fe30db30d5dad26f761e0f52fedef4c7b1b538ddc7
+    SHA512 ee0958b307dda8c39ab5a5b26276139301adbdf2a186daf2701da60f428055a88355f15731c61593f5ff506184c4ab13ea19d725e8e7baff7663783625b7b766
 )
 
 string(COMPARE EQUAL "${VCPKG_CRT_LINKAGE}" "static" STATIC_CRT)
@@ -34,4 +34,7 @@ file(REMOVE_RECURSE
 
 vcpkg_copy_pdbs()
 
-vcpkg_install_copyright(FILE_LIST "${SOURCE_PATH}/LICENSE")
+vcpkg_install_copyright(FILE_LIST
+    "${SOURCE_PATH}/LICENSE"
+    "${SOURCE_PATH}/NOTICE"
+)
